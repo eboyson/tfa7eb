@@ -1,0 +1,5 @@
+@extends('layouts.app')
+@section('content')
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div><h1>User Accounts</h1><p class="lead">Create and edit user accounts with avatar support.</p></div><a class="button" href="{{ route('users.create') }}">+ Create User</a></div>
+<div class="table-wrap"><table><thead><tr><th>Avatar</th><th>ID</th><th>Username</th><th>Full Name</th><th>Email</th><th>Status</th><th>Action</th></tr></thead><tbody>@forelse ($users as $user)<tr><td>@if($user->avatar)<img src="{{ asset('storage/'.$user->avatar) }}" alt="Avatar" width="52" height="52" style="border-radius:50%;object-fit:cover">@else<span class="tag">No image</span>@endif</td><td>{{ $user->id }}</td><td>{{ $user->username }}</td><td>{{ $user->full_name }}</td><td>{{ $user->email ?? '—' }}</td><td><span class="tag">Active</span></td><td><a href="{{ route('users.edit', $user) }}">Edit</a></td></tr>@empty<tr><td colspan="7">No users found.</td></tr>@endforelse</tbody></table></div>
+@endsection

@@ -1,0 +1,2 @@
+@extends('layouts.app')
+@section('content')<section class="hero"><h1>From Arrays to Eloquent</h1><p class="lead">A database-backed Laravel POS application using migrations, seeders, Eloquent models, controllers, and Blade views.</p><div class="buttons"><a class="button" href="{{ url('/customers') }}">View Customers</a><a class="button secondary" href="{{ url('/users') }}">View Users</a></div></section>@endsection

@@ -1,0 +1,16 @@
+{
+  "customers": [
+    {"id":1,"full_name":"Maria Santos","email":"maria.santos@example.com","phone":"0917-555-0101"},
+    {"id":2,"full_name":"Juan Dela Cruz","email":"juan.delacruz@example.com","phone":"0918-555-0102"},
+    {"id":3,"full_name":"Angela Reyes","email":"angela.reyes@example.com","phone":"0919-555-0103"},
+    {"id":4,"full_name":"Paolo Garcia","email":"paolo.garcia@example.com","phone":"0920-555-0104"},
+    {"id":5,"full_name":"Liza Navarro","email":"liza.navarro@example.com","phone":"0921-555-0105"}
+  ],
+  "users": [
+    {"id":1,"username":"admin","full_name":"Admin User"},
+    {"id":2,"username":"claire","full_name":"Claire Mendoza"},
+    {"id":3,"username":"ramon","full_name":"Ramon Flores"},
+    {"id":4,"username":"nina","full_name":"Nina Castillo"},
+    {"id":5,"username":"leo","full_name":"Leo Bautista"}
+  ]
+}

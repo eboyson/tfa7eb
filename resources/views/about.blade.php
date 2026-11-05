@@ -1,0 +1,2 @@
+@extends('layouts.app')
+@section('content')<section class="card"><h1>About This Application</h1><p>This TFA6 activity replaces TFA5 static arrays with a real Laravel data layer. Migrations define the tables, seeders insert sample records, Eloquent models retrieve records, and Blade views display them.</p><div class="buttons"><a class="button" href="{{ url('/customers') }}">Customer Accounts</a><a class="button secondary" href="{{ url('/users') }}">User Accounts</a></div></section>@endsection
